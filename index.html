@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>桃園心和寵物天堂 | 台北新北新竹寵物火化 | 24H到府接送</title>
+    <meta name="description" content="桃園心和寵物天堂(0976-320-093)提供24小時寵物火化與遺體接送。服務範圍涵蓋：桃園全區、台北市、新北市、新竹縣市。價格透明，提供個別火化與團體火化，協助處理狗、貓、兔、倉鼠等毛孩後事。合法立案，專車跨縣市服務。">
+    <meta name="keywords" content="桃園寵物火化, 台北寵物火化, 新北寵物火化, 新竹寵物火化, 板橋寵物火化, 中壢寵物火化, 三重寵物火化, 竹北寵物火化, 桃園狗過世, 台北貓過世, 寵物遺體處理, 寵物火化費用, 24小時寵物接送, 寵物殯葬, 寵物個別火化, 寵物團體火化">
+    
+    <meta property="og:title" content="心和寵物天堂 - 讓愛圓滿延續">
+    <meta property="og:description" content="24H 專人服務，合法園區，價格透明。跨縣市專車接體，給寶貝最溫柔的最後一哩路。">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=2069&auto=format&fit=crop">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "桃園心和寵物天堂",
+      "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=2069&auto=format&fit=crop",
+      "telephone": "0976-320-093",
+      "priceRange": "$1500-$8000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "大明街56巷1-3號1樓",
+        "addressLocality": "桃園區",
+        "addressRegion": "桃園市",
+        "addressCountry": "TW"
+      },
+      "areaServed": [
+        "Taoyuan City",
+        "Taipei City",
+        "New Taipei City",
+        "Hsinchu City",
+        "Hsinchu County"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 24.993, 
+        "longitude": 121.301
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "url": "http://www.xinhe-pet.com.tw" 
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        
+        :root {
+            --brand-primary: #C69C6D;
+            --brand-dark: #5A4A42;
+            --brand-light: #FDFBF7;
+            --brand-accent: #8B7355;
+        }
+
+        body { 
+            font-family: 'Noto Sans TC', sans-serif; 
+            color: var(--brand-dark);
+            background-color: var(--brand-light);
+            overflow-x: hidden;
+        }
+
+        .nav-item {
+            position: relative;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--brand-primary);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        .nav-item:hover::after, .nav-item.active::after {
+            width: 80%;
+        }
+
+        .page-content {
+            display: none;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .page-content.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #loader-overlay {
+            position: fixed;
+            inset: 0;
+            background: #FFF;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: opacity 0.5s;
+        }
+
+        .img-cover {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .hover-zoom:hover .img-cover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="loader-overlay">
+        <div class="text-[#C69C6D] text-5xl mb-4 animate-bounce"><i class="fa-solid fa-paw"></i></div>
+        <p class="text-[#5A4A42] tracking-[0.3em] text-lg font-bold">用心 ‧ 陪伴 ‧ 圓滿</p>
+    </div>
+
+    <nav class="bg-white shadow-md fixed w-full z-50 h-[80px] flex items-center">
+        <div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="navTo('home')">
+                <i class="fa-solid fa-cloud text-[#C69C6D] text-3xl"></i>
+                <div>
+                    <h1 class="text-xl font-bold tracking-wide text-[#5A4A42]">心和寵物天堂</h1>
+                    <p class="text-[10px] text-gray-400 tracking-[0.2em] uppercase">Xinhe Pet Memorial</p>
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-2 text-sm font-medium text-[#5A4A42]">
+                <div class="nav-item active" onclick="navTo('home')">首頁</div>
+                <div class="nav-item" onclick="navTo('about')">關於我們</div>
+                <div class="nav-item" onclick="navTo('services')">服務介紹</div>
+                <div class="nav-item" onclick="navTo('process')">服務流程</div>
+                <div class="nav-item" onclick="navTo('environment')">園區環境</div>
+                <div class="nav-item" onclick="navTo('contact')">聯絡我們</div>
+                <a href="tel:0976320093" class="ml-6 bg-[#C69C6D] text-white px-5 py-2 rounded-full shadow hover:bg-[#b0885b] transition">
+                    <i class="fa-solid fa-phone mr-1"></i> 24H 專線
+                </a>
+            </div>
+
+            <button class="md:hidden text-2xl text-[#5A4A42]" onclick="toggleMobileMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-40 hidden flex-col items-center justify-center space-y-8 text-xl font-bold text-[#5A4A42]">
+        <button class="absolute top-6 right-6 text-3xl" onclick="toggleMobileMenu()"><i class="fa-solid fa-xmark"></i></button>
+        <div onclick="navTo('home'); toggleMobileMenu()">首頁</div>
+        <div onclick="navTo('about'); toggleMobileMenu()">關於我們</div>
+        <div onclick="navTo('services'); toggleMobileMenu()">服務介紹</div>
+        <div onclick="navTo('process'); toggleMobileMenu()">服務流程</div>
+        <div onclick="navTo('environment'); toggleMobileMenu()">園區環境</div>
+        <div onclick="navTo('contact'); toggleMobileMenu()">聯絡我們</div>
+    </div>
+
+    <div class="pt-[80px] min-h-screen">
+
+        <div id="page-home" class="page-content active">
+            <div class="relative h-[600px] w-full bg-gray-200 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=2069&auto=format&fit=crop" class="w-full h-full object-cover brightness-75">
+                <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
+                    <h2 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight shadow-sm">最後的溫柔，始於心和</h2>
+                    
+                    <p class="text-lg md:text-xl mb-8 font-light tracking-wider">合法立案 ‧ 全程陪伴 ‧ 24H 跨縣市接送</p>
+                    <div class="flex gap-4">
+                        <button onclick="navTo('services')" class="border-2 border-white hover:bg-white hover:text-[#5A4A42] text-white px-8 py-3 transition duration-300 rounded-full font-bold tracking-wide">了解服務</button>
+                        <button onclick="navTo('contact')" class="bg-[#C69C6D] text-white px-8 py-3 hover:bg-[#b0885b] transition duration-300 rounded-full shadow-lg font-bold tracking-wide border-2 border-[#C69C6D]">立即諮詢</button>
+                    </div>
+                </div>
+            </div>
+
+            <section class="py-20 max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl font-bold text-[#5A4A42] mb-3">生命的延續，記憶的永恆</h3>
+                    <div class="w-16 h-1 bg-[#C69C6D] mx-auto"></div>
+                    <p class="mt-6 text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                        我們深知毛孩是您心頭最軟的一塊。在心和，我們不只處理身後事，更在乎您與寶貝之間那份無法割捨的情感。用專業與尊嚴，為這段旅程畫下圓滿句點。
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-4 gap-8 text-center">
+                    <div class="p-6 hover:shadow-lg transition duration-300 rounded-lg bg-white group">
+                        <div class="w-16 h-16 mx-auto bg-[#FDFBF7] rounded-full flex items-center justify-center mb-4 group-hover:bg-[#C69C6D] transition">
+                            <i class="fa-solid fa-certificate text-2xl text-[#C69C6D] group-hover:text-white"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">合法立案</h4>
+                        <p class="text-sm text-gray-500">正規經營，設備環保合格<br>讓您安心託付</p>
+                    </div>
+                    <div class="p-6 hover:shadow-lg transition duration-300 rounded-lg bg-white group">
+                        <div class="w-16 h-16 mx-auto bg-[#FDFBF7] rounded-full flex items-center justify-center mb-4 group-hover:bg-[#C69C6D] transition">
+                            <i class="fa-solid fa-heart text-2xl text-[#C69C6D] group-hover:text-white"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">個別羽化</h4>
+                        <p class="text-sm text-gray-500">獨立火化，絕不混雜<br>完整保留骨灰</p>
+                    </div>
+                    <div class="p-6 hover:shadow-lg transition duration-300 rounded-lg bg-white group">
+                        <div class="w-16 h-16 mx-auto bg-[#FDFBF7] rounded-full flex items-center justify-center mb-4 group-hover:bg-[#C69C6D] transition">
+                            <i class="fa-solid fa-users text-2xl text-[#C69C6D] group-hover:text-white"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">團體羽化</h4>
+                        <p class="text-sm text-gray-500">群體火化，回歸大地<br>費用平實，圓滿安息</p>
+                    </div>
+                    <div class="p-6 hover:shadow-lg transition duration-300 rounded-lg bg-white group">
+                        <div class="w-16 h-16 mx-auto bg-[#FDFBF7] rounded-full flex items-center justify-center mb-4 group-hover:bg-[#C69C6D] transition">
+                            <i class="fa-solid fa-leaf text-2xl text-[#C69C6D] group-hover:text-white"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">圓滿回歸</h4>
+                        <p class="text-sm text-gray-500">精緻骨灰罐與後續晉塔<br>協助寶貝回歸自然</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-about" class="page-content">
+            <div class="h-[300px] bg-gray-800 relative flex items-center justify-center">
+                <img src="https://images.unsplash.com/photo-1597953601374-1ffaddd56a3b?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40">
+                <h2 class="relative text-4xl text-white font-bold tracking-widest border-b-2 border-[#C69C6D] pb-2">關於我們</h2>
+            </div>
+            
+            <section class="max-w-6xl mx-auto px-6 py-20">
+                <div class="flex flex-col md:flex-row gap-12 items-center mb-20">
+                    <div class="md:w-1/2 h-[400px] overflow-hidden rounded-lg shadow-xl hover-zoom">
+                        <img src="https://images.unsplash.com/photo-1517423568366-697553540363?q=80&w=2071&auto=format&fit=crop" class="img-cover" alt="陪伴">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold text-[#C69C6D] mb-4">初心與承諾</h3>
+                        <h4 class="text-xl font-bold text-[#5A4A42] mb-6">我們也是毛孩的家人</h4>
+                        <p class="text-gray-600 leading-8 text-justify mb-6">
+                            「桃園心和寵物天堂」位於交通便利的桃園市區。我們創立的初衷很簡單：希望在每一個飼主最無助的時刻，能有一雙溫暖的手接住這份悲傷。
+                            <br><br>
+                            我們服務的足跡遍布**桃園、台北、新北與新竹**。不同於傳統殯葬業的冰冷距離感，心和致力於打造一個明亮、溫馨的空間。我們堅持所有流程透明公開，拒絕模糊報價，因為我們深信，信任是送別儀式中最重要的基石。
+                        </p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 bg-white p-10 shadow-sm border-t-4 border-[#C69C6D]">
+                    <div class="text-center">
+                        <h4 class="font-bold text-xl mb-3">誠信</h4>
+                        <p class="text-gray-500 text-sm">價格透明，流程公開，不二價，不強推。</p>
+                    </div>
+                    <div class="text-center border-l border-gray-200">
+                        <h4 class="font-bold text-xl mb-3">專業</h4>
+                        <p class="text-gray-500 text-sm">正規禮儀訓練，合法設備，標準SOP。</p>
+                    </div>
+                    <div class="text-center border-l border-gray-200">
+                        <h4 class="font-bold text-xl mb-3">同理</h4>
+                        <p class="text-gray-500 text-sm">視如己出，輕手輕腳，給予最大尊重。</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-services" class="page-content">
+            <div class="h-[300px] bg-gray-800 relative flex items-center justify-center">
+                <img src="https://images.unsplash.com/photo-1625246333195-58197bd47f3b?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40">
+                <h2 class="relative text-4xl text-white font-bold tracking-widest border-b-2 border-[#C69C6D] pb-2">服務介紹</h2>
+            </div>
+
+            <section class="max-w-6xl mx-auto px-6 py-20">
+                <p class="text-center text-gray-500 max-w-2xl mx-auto mb-16">
+                    我們提供完善的個別與團體火化服務，依照您的需求與預算，為寶貝規劃最合適的畢業典禮。<br>
+                    <span class="text-[#C69C6D] font-bold">服務區域：桃園全區、台北市、新北市、新竹縣市。</span>
+                </p>
+
+                <div class="flex flex-col md:flex-row bg-white shadow-lg rounded-xl overflow-hidden mb-12 border-2 border-[#F0E6D9]">
+                    <div class="md:w-1/2 h-[400px] md:h-auto bg-gray-200 relative">
+                         <img src="https://images.unsplash.com/photo-1605494236968-a8d875694a53?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover" alt="個別火化">
+                         <div class="absolute top-4 left-4 bg-[#C69C6D] text-white px-3 py-1 text-sm font-bold rounded">推薦選擇</div>
+                    </div>
+                    <div class="md:w-1/2 p-10 flex flex-col justify-center">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-2xl font-bold text-[#5A4A42]">個別羽化 (尊榮專屬)</h3>
+                            <div class="text-3xl font-bold text-[#C69C6D]">NT$ 3,000 <span class="text-sm text-gray-400 font-normal">起</span></div>
+                        </div>
+                        <div class="text-[#8B7355] font-bold text-sm mb-6 uppercase tracking-wider">Individual Cremation</div>
+                        <p class="text-gray-600 mb-6">
+                            適合希望全程參與、親自撿骨，並將寶貝骨灰帶回紀念的家長。提供獨立火化爐，確保骨灰純淨完整。
+                        </p>
+                        <ul class="space-y-2 text-gray-500 mb-8">
+                            <li><i class="fa-solid fa-check text-[#C69C6D] mr-2"></i> 專屬告別式 (可觀禮)</li>
+                            <li><i class="fa-solid fa-check text-[#C69C6D] mr-2"></i> 獨立火化 (約 1-2 小時)</li>
+                            <li><i class="fa-solid fa-check text-[#C69C6D] mr-2"></i> 親自撿骨 / 封罐</li>
+                            <li><i class="fa-solid fa-check text-[#C69C6D] mr-2"></i> 包含精緻骨灰罐</li>
+                        </ul>
+                        <a href="https://line.me/ti/p/0976320093" class="inline-block bg-[#5A4A42] text-white px-8 py-3 rounded-full text-center hover:bg-[#C69C6D] transition w-fit font-bold shadow-lg">
+                            <i class="fa-brands fa-line mr-1"></i> 預約個別火化
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row-reverse bg-white shadow-lg rounded-xl overflow-hidden mb-12">
+                    <div class="md:w-1/2 h-[400px] md:h-auto bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1470058869958-2a77ade41c02?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover" alt="團體火化">
+                    </div>
+                    <div class="md:w-1/2 p-10 flex flex-col justify-center">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-2xl font-bold text-[#5A4A42]">團體羽化 (回歸自然)</h3>
+                            <div class="text-3xl font-bold text-[#C69C6D]">NT$ 1,500 <span class="text-sm text-gray-400 font-normal">起</span></div>
+                        </div>
+                        <div class="text-[#8B7355] font-bold text-sm mb-6 uppercase tracking-wider">Group Cremation</div>
+                        <p class="text-gray-600 mb-6">
+                            適合希望讓寶貝與其他夥伴相伴，一同回歸大地的家長。火化後骨灰將統一灑葬於合法環保園區。
+                        </p>
+                        <ul class="space-y-2 text-gray-500 mb-8">
+                            <li><i class="fa-solid fa-check text-[#C69C6D] mr-2"></i> 基礎淨身儀式</li>
+                            <li><i class="fa-solid fa-check text-[#C69C6D] mr-2"></i> 集體火化程序</li>
+                            <li><i class="fa-solid fa-check text-[#C69C6D] mr-2"></i> 統一環保灑葬</li>
+                            <li><i class="fa-solid fa-info-circle text-gray-400 mr-2"></i> 不保留骨灰</li>
+                        </ul>
+                        <a href="https://line.me/ti/p/0976320093" class="inline-block border-2 border-[#5A4A42] text-[#5A4A42] px-8 py-3 rounded-full text-center hover:bg-[#5A4A42] hover:text-white transition w-fit font-bold">
+                            詢問團體方案
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-process" class="page-content">
+            <div class="h-[300px] bg-gray-800 relative flex items-center justify-center">
+                <img src="https://images.unsplash.com/photo-1516216628259-222405022b5d?q=80&w=2076&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40">
+                <h2 class="relative text-4xl text-white font-bold tracking-widest border-b-2 border-[#C69C6D] pb-2">服務流程</h2>
+            </div>
+            
+            <section class="max-w-5xl mx-auto px-6 py-20">
+                <div class="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+                    
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-[#C69C6D] text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 text-lg font-bold">1</div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded border border-slate-200 shadow">
+                            <h3 class="font-bold text-[#5A4A42] mb-1">臨終諮詢</h3>
+                            <p class="text-sm text-gray-500">24H 專線 (0976-320-093) 聯繫。禮儀師會先在電話中安撫您的情緒，並教導如何先在家中為寶貝進行基礎安置。</p>
+                        </div>
+                    </div>
+
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-hover:bg-[#C69C6D] text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 text-lg font-bold">2</div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded border border-slate-200 shadow">
+                            <h3 class="font-bold text-[#5A4A42] mb-1">專車接體</h3>
+                            <p class="text-sm text-gray-500">確認時間地點後，我們將派遣專用接體車與禮儀師前往府上（服務範圍：桃園、雙北、新竹）。過程中使用專用往生被與紙棺。</p>
+                        </div>
+                    </div>
+
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-hover:bg-[#C69C6D] text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 text-lg font-bold">3</div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded border border-slate-200 shadow">
+                            <h3 class="font-bold text-[#5A4A42] mb-1">告別與火化</h3>
+                            <p class="text-sm text-gray-500">
+                                <strong>個別：</strong>安排告別室，家屬可進行最後道別，隨後送入獨立火化爐。<br>
+                                <strong>團體：</strong>由禮儀師代為進行淨身祈福，並安排集體火化時間。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-hover:bg-[#C69C6D] text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 text-lg font-bold">4</div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded border border-slate-200 shadow">
+                            <h3 class="font-bold text-[#5A4A42] mb-1">撿骨與圓滿</h3>
+                            <p class="text-sm text-gray-500">火化結束後，個別火化家屬可親自撿骨、封罐。最後您可以選擇將骨灰帶回、晉塔，或交由我們協助灑葬。</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <div id="page-environment" class="page-content">
+            <div class="h-[300px] bg-gray-800 relative flex items-center justify-center">
+                <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40">
+                <h2 class="relative text-4xl text-white font-bold tracking-widest border-b-2 border-[#C69C6D] pb-2">園區環境</h2>
+            </div>
+            
+            <section class="max-w-6xl mx-auto px-6 py-20">
+                <p class="text-center text-gray-500 mb-12">明亮、潔淨、溫馨的空間，讓道別不只有淚水，還有愛的溫度。</p>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-2 shadow rounded">
+                        <div class="h-64 overflow-hidden rounded bg-gray-100 hover-zoom">
+                             <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop" class="img-cover" alt="接待大廳">
+                        </div>
+                        <p class="text-center mt-3 font-bold text-[#5A4A42]">接待大廳</p>
+                    </div>
+                    <div class="bg-white p-2 shadow rounded">
+                        <div class="h-64 overflow-hidden rounded bg-gray-100 hover-zoom">
+                             <img src="https://images.unsplash.com/photo-1617103996702-96ff29b1c467?q=80&w=1932&auto=format&fit=crop" class="img-cover" alt="溫馨告別室">
+                        </div>
+                        <p class="text-center mt-3 font-bold text-[#5A4A42]">溫馨告別室</p>
+                    </div>
+                    <div class="bg-white p-2 shadow rounded">
+                        <div class="h-64 overflow-hidden rounded bg-gray-100 hover-zoom">
+                             <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=2728&auto=format&fit=crop" class="img-cover" alt="大體安置室">
+                        </div>
+                        <p class="text-center mt-3 font-bold text-[#5A4A42]">寧靜安置區</p>
+                    </div>
+                    <div class="bg-white p-2 shadow rounded">
+                        <div class="h-64 overflow-hidden rounded bg-gray-100 hover-zoom">
+                             <img src="https://images.unsplash.com/photo-1616627547584-bf28cee262db?q=80&w=2070&auto=format&fit=crop" class="img-cover" alt="禮儀用品">
+                        </div>
+                        <p class="text-center mt-3 font-bold text-[#5A4A42]">禮儀用品區</p>
+                    </div>
+                    <div class="bg-white p-2 shadow rounded">
+                        <div class="h-64 overflow-hidden rounded bg-gray-100 hover-zoom">
+                             <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=2070&auto=format&fit=crop" class="img-cover" alt="專用接體車">
+                        </div>
+                        <p class="text-center mt-3 font-bold text-[#5A4A42]">專用接體車</p>
+                    </div>
+                    <div class="bg-white p-2 shadow rounded">
+                        <div class="h-64 overflow-hidden rounded bg-gray-100 hover-zoom">
+                             <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" class="img-cover" alt="諮詢空間">
+                        </div>
+                        <p class="text-center mt-3 font-bold text-[#5A4A42]">家屬諮詢區</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-contact" class="page-content">
+            <div class="h-[300px] bg-gray-800 relative flex items-center justify-center">
+                 <img src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40">
+                <h2 class="relative text-4xl text-white font-bold tracking-widest border-b-2 border-[#C69C6D] pb-2">聯絡我們</h2>
+            </div>
+            
+            <section class="max-w-6xl mx-auto px-6 py-20">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="bg-white p-8 shadow-lg rounded-xl border-t-4 border-[#C69C6D]">
+                        <h3 class="text-2xl font-bold text-[#5A4A42] mb-8">服務資訊</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-phone text-[#C69C6D] text-xl w-10 mt-1"></i>
+                                <div>
+                                    <p class="text-xs text-gray-400 uppercase">24HR Hotline</p>
+                                    <p class="text-xl font-bold">0976-320-093</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fa-brands fa-line text-[#06C755] text-xl w-10 mt-1"></i>
+                                <div>
+                                    <p class="text-xs text-gray-400 uppercase">LINE ID</p>
+                                    <p class="text-xl font-bold">0976320093</p>
+                                    <a href="https://line.me/ti/p/0976320093" class="text-sm text-[#06C755] hover:underline">點擊加入好友</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-location-dot text-[#C69C6D] text-xl w-10 mt-1"></i>
+                                <div>
+                                    <p class="text-xs text-gray-400 uppercase">Address</p>
+                                    <p class="text-lg">桃園市桃園區大明街56巷1-3號1樓</p>
+                                    <a href="https://goo.gl/maps/example" class="text-sm text-[#C69C6D] hover:underline">Google 導航</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start pt-4 border-t border-gray-100">
+                                <i class="fa-solid fa-map-location-dot text-[#C69C6D] text-xl w-10 mt-1"></i>
+                                <div>
+                                    <p class="text-xs text-gray-400 uppercase">Service Area</p>
+                                    <p class="text-md font-bold text-gray-700">桃園市 ‧ 台北市 ‧ 新北市 ‧ 新竹縣市</p>
+                                    <p class="text-xs text-gray-400 mt-1">24小時專車到府/醫院接體</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="h-[400px] bg-gray-200 rounded-xl overflow-hidden shadow-lg">
+                        <iframe src="https://maps.google.com/maps?q=桃園市桃園區大明街56巷1-3號&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <footer class="bg-[#2C2825] text-white pt-16 pb-8">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8 mb-12">
+            <div class="col-span-1 md:col-span-2">
+                <h3 class="text-2xl font-bold mb-4">心和寵物天堂</h3>
+                <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
+                    我們承諾以合法、透明、溫暖的服務，陪伴每一位家長走過這段艱難的時刻。讓愛延續，讓道別不留遺憾。
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4 text-[#C69C6D]">快速連結</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#" onclick="navTo('about')" class="hover:text-white">關於我們</a></li>
+                    <li><a href="#" onclick="navTo('services')" class="hover:text-white">服務項目</a></li>
+                    <li><a href="#" onclick="navTo('process')" class="hover:text-white">服務流程</a></li>
+                    <li><a href="#" onclick="navTo('contact')" class="hover:text-white">聯絡我們</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4 text-[#C69C6D]">服務區域</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><i class="fa-solid fa-location-arrow mr-2"></i> 桃園全區 (據點)</li>
+                    <li><i class="fa-solid fa-location-arrow mr-2"></i> 台北市 / 新北市</li>
+                    <li><i class="fa-solid fa-location-arrow mr-2"></i> 新竹市 / 新竹縣</li>
+                    <li><i class="fa-solid fa-phone mr-2"></i> 24H 專線：0976-320-093</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 pt-8 text-center text-xs text-gray-500">
+            <p>© 2024 Xinhe Pet Memorial. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.onload = function() {
+            setTimeout(() => {
+                document.getElementById('loader-overlay').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('loader-overlay').style.display = 'none';
+                }, 500);
+            }, 800);
+        }
+
+        function navTo(pageId) {
+            const loader = document.getElementById('loader-overlay');
+            loader.style.display = 'flex';
+            
+            requestAnimationFrame(() => {
+                loader.style.opacity = '1';
+            });
+
+            setTimeout(() => {
+                document.querySelectorAll('.page-content').forEach(el => el.classList.remove('active'));
+                document.getElementById('page-' + pageId).classList.add('active');
+                
+                document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+                
+                window.scrollTo(0, 0);
+
+                loader.style.opacity = '0';
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 500);
+            }, 500);
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+            } else {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+            }
+        }
+    </script>
+</body>
+</html>
